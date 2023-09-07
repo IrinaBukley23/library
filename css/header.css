@@ -1,0 +1,105 @@
+.header {
+    background-color: #000000;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 2%;
+    color: #ffffff;
+}
+.header__wrapper{ 
+    display: flex;
+    align-items: center;
+}
+.header__menu {
+
+ }
+.header__menu-list {
+    display: flex;
+    align-items: center;
+ }
+.header__menu-list_item { 
+    margin: 0 0 0 30px;
+}
+.header__menu-list_item a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+ }
+.header__profile { 
+    margin: 0 0 0 40px;
+}
+@media (max-width: 1010px) {
+    .header__menu-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__menu-list_item {
+        margin: 0 0 0 20px;
+    }
+}
+@media (max-width: 954px) {
+    .burger {
+        width: 45px;
+        height: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+    }
+    .burger::before, .burger::after {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+    }
+    .burger::before {
+        top: 0;
+        display: block;
+    }
+    .burger::after {
+        bottom: 0;
+    }
+    .burger span {
+        display: block;
+        width: 45px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .header__menu-list {
+       display: none;
+    }
+    .header__profile { 
+        margin: 0 40px;
+    }
+}
+@media (max-width: 500px) {
+    .header__title {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .header__profile { 
+        margin: 0 20px;
+    }
+    .burger {
+        width: 35px;
+    }
+    .burger::before, .burger::after {
+        width: 35px;
+    }
+    .burger span {
+        width: 35px;
+    }
+}
