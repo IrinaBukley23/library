@@ -1,0 +1,19 @@
+.promo {
+    background: url('../img/welcome-1440.jpg') no-repeat;
+    background-position: center;
+    min-height: 600px;
+    padding: 220px 0 160px;
+}
+.promo__title {
+    padding: 35px 40px;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+    width: 600px;
+    text-transform: uppercase;
+    background-color: #000000;
+}
